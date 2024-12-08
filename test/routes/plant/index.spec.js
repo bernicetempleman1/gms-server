@@ -1,6 +1,7 @@
 const request = require("supertest");
 const app = require("../../../src/app");
 const { Plant } = require("../../../src/models/plant");
+
 jest.mock("../../../src/models/plant"); // Mock the Plant model
 describe("Plant API", () => {
   describe("GET /api/plants", () => {
